@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="left">
+        <app-search-bar (search)="onSearch($event)"></app-search-bar>
+        <ng-container *ngIf="rootFolder; else noFolderView" class="tree-container">
+            <app-folders [folder]="rootFolder" [searchRequest]="searchRequest" [path]="path"></app-folders>
+        </ng-container>
+        <ng-template #noFolderView>
+            There are no folders in JSON
+        </ng-template>
+
+        <div>
+            <button (click)="changeIsOpenedState(rootFolder, false)">Collapse all</button>
+            <button (click)="changeIsOpenedState(rootFolder, true)">Expand all</button>
+        </div>
+    </div>
+    
+    <div class="right">
+        <app-content></app-content>
+    </div>
+</div>

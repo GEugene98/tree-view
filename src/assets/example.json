@@ -1,0 +1,93 @@
+{
+  "name": "desktop",
+  "files": [
+    {
+      "name": "mytext.txt"
+    }
+  ],
+  "children": [
+    {
+      "name": "documents",
+      "files": [
+        {
+          "name": "logs.txt"
+        },
+        {
+          "name": "scan.png"
+        },
+        {
+          "name": "draw.tif"
+        }
+      ],
+      "children": [
+        {
+          "name": "copied",
+          "files": [
+            {
+              "name": "passport.pdf"
+            }
+          ],
+          "children": [
+            {
+              "name": "My folder",
+              "files": [],
+              "children": []
+            },
+            {
+              "name": "My folder 2",
+              "files": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "music",
+      "files": [],
+      "children": [
+        {
+          "name": "albums",
+          "files": [],
+          "children": [
+            {
+              "name": "first",
+              "files": [],
+              "children": [
+                {
+                  "name": "second",
+                  "files": [],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "80's",
+              "files": [
+                {
+                  "name": "track1.mp3"
+                },
+                {
+                  "name": "track2.mp3"
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "photos",
+      "files": [
+        {
+          "name": "sunset.jpg"
+        },
+        {
+          "name": "sky.png"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

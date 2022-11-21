@@ -1,0 +1,16 @@
+<p class="folder-name pointer" (click)="openFolder()" [class.emptyFolder]="!hasContent"> 
+    <span [class.hidden]="!(!searchRequest || (searchRequest && folderNameMatchesRequest))">
+        <span>
+            <span *ngIf="folder?.isOpened">📂 </span>
+            <span *ngIf="!folder?.isOpened">📁 </span> {{folder?.name}}
+        </span>
+    </span>
+</p>
+<div *ngIf="folder?.isOpened" class="folder-content">
+    <div class="pointer" *ngFor="let file of folder?.files" (click)="openFile(file)">
+        <span [class.hidden]="!(!searchRequest || (searchRequest && !file.isHidden))">
+            📄 {{file.name}}
+        </span>
+    </div>
+    <app-folders *ngFor="let innerFolder of folder?.children" [folder]="innerFolder" [searchRequest]="searchRequest"></app-folders>
+</div>

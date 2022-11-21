@@ -1,0 +1,21 @@
+.folder-content {
+    margin-left: 30px;
+    user-select: none;
+}
+
+.folder-name {
+    user-select: none;
+    font-weight: bolder;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.emptyFolder {
+    opacity: 0.5;
+}
+
+.hidden {
+    opacity: 0.1;
+}

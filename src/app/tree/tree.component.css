@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+}
+
+.left {
+  padding: 15px;
+  width: 35%;
+  border-right: 0.1px solid darkgray;
+}
+
+.right {
+  padding: 15px;
+}
+
+button {
+  border: 0.1px solid darkcyan;
+  border-radius: 6.5px;
+  padding: 3px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
